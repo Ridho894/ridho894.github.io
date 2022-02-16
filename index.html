@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ridho894.github.io</title>
+  </head>
+
+  <body>
+    <main
+      class="max-w-6xl mx-5 lg:mx-auto space-y-6 flex items-center justify-center flex-col max-h-screen h-screen"
+    >
+      <img src="logo.png" alt=".img" class="h-24" />
+      <h1 class="font-sans text-xl text-center">
+        Hi, I'm Muhamad Ridho Budikusuma A Designer,
+        <a
+          class="underline hover:text-pink-400"
+          href="https://github.com/Ridho894"
+          >Coder</a
+        >
+        And
+        <a
+          class="underline hover:text-pink-400"
+          href="https://twitter.com/KakkIdo"
+          >Friend</a
+        ><br />
+        Based In Yogyakarta, Indonesia
+      </h1>
+      <button
+        class="bg-pink-400 p-3 px-10 rounded-full text-white transform hover:scale-110 transition-transform ease-in duration-200 font-bold"
+      >
+        SEE MY PORTOFOLIO
+      </button>
+    </main>
+  </body>
+  <script>
+    const button = document.querySelector("button");
+    button.addEventListener("click", () => {
+      window.location = "https://rd-portofolio.vercel.app/";
+    });
+  </script>
 </html>
